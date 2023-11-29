@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credito</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="icon" href="./img/uhhh.png" type="image/wbpp">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-design">
+                        <img src="./img/chip-img.png" alt="" class="card-chip">
+                        <img class="visa-logo" src="./img/visa-logo.png" alt="">
+                    </div>
+                    <h2 class="cardNumber"></h2> 
+                    <div class="card-bottom">
+                        <div class="holder-container">
+                            <div class="card-holder">
+                                <p>Card Holder</p>
+                                <div class="user-initials-container">
+                                    <h2 class="userNameOutput user-initials"></h2>
+                                    <h2 class="userLastNameOutput user-initials"></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-exp">
+                            <p>Expires</p>
+                            <h3 class="cardDate"></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client-info">
+                <form class="client-form" onsubmit="submitForm(event)">
+                    <div class="fname-container">
+                        <p>First Name</p>
+                        <input type="text" class="userNameInput userInput" oninput="updateOutput()">
+                    </div>
+                    
+                    <div class="sname-container">
+                        <p>Last Name</p>
+                        <input type="text" class="userLastNameInput userInput" oninput="updateOutput()">
+                    </div>
+
+                    <button class="submit-button" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <h2 class="cardCvc"></h2>
+    </main>
+    <script src="./script.js"></script>
+    <script src="./style.js"></script>
+</body>
+</html>
